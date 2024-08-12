@@ -1,5 +1,8 @@
 # Random user data test
 
+# Start time 10:00 
+# Done with test 14:30 
+
 ## cd random-user-data/ cd src / npm start
 
 ## Approach
