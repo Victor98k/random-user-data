@@ -31,4 +31,25 @@ const useRandomUser = () => {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+
+  const fetchUser = () => {
+    setLoading(true);
+    setError(null);
+    try {
+      const response = axios.get("https://randomuser.me/api/");
+      setUser(response.data);
+    } catch (err) {
+      setError("Failed to get user");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchUser();
+  }, []);
+
+  return { user, loading, error, fetchUser };
 };
+
+export default useRandomUser;

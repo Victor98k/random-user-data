@@ -13,3 +13,9 @@ My approach for the structure is to first create a component with a custom hook 
 My approach for the UI will be mobile-first. After I have successfully retrieved my data, I will start styling the UI for mobile first. Then I will move on to bigger screens. For this test, I will be using regular CSS and the UI library called Ant Design.
 
 I will use Ant Design in the UI for clean styling.
+
+## Challanges
+
+1. Working with TS interface.
+   @useRandomUser.ts line 15.
+   As I mentioned, I have not worked a lot with TS. For this part, I had to look at some code I've worked with earlier.
