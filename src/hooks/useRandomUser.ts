@@ -32,11 +32,11 @@ const useRandomUser = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  const fetchUser = () => {
+  const fetchUser = async () => {
     setLoading(true);
     setError(null);
     try {
-      const response = axios.get("https://randomuser.me/api/");
+      const response = await axios.get("https://randomuser.me/api/");
       setUser(response.data);
     } catch (err) {
       setError("Failed to get user");
