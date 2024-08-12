@@ -1,46 +1,15 @@
-# Getting Started with Create React App
+# Ranom user data test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Approach
 
-## Available Scripts
+I'm used to working with React applications, but I have not worked with TypeScript much. TypeScript will be covered during our Backend 2 course, which starts in about 6 weeks. I have worked with TypeScript at my current internship, so I should be able to figure this out. But I know it will be a challenge. If I get stuck during this test, I will check code I have written earlier and hopefully be able to move on with the test. No AI help will be used during this test.
 
-In the project directory, you can run:
+The instructions for this test do not say that I can't use the internet or other sources for help during the test. But I figure that I should not use too much help and write the code myself.
 
-### `npm start`
+## Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+My approach for the structure is to first create a component with a custom hook to fetch our data. This hook will manage the important states for the data. Then I will import that custom hook into my main component and render the required data.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+My approach for the UI will be mobile-first. After I have successfully retrieved my data, I will start styling the UI for mobile first. Then I will move on to bigger screens. For this test, I will be using regular CSS and the UI library called Ant Design.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+I will use Ant Design in the UI for clean styling.
