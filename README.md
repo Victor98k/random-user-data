@@ -1,4 +1,6 @@
-# Ranom user data test
+# Random user data test
+
+## cd random-user-data/ cd src / npm start
 
 ## Approach
 
