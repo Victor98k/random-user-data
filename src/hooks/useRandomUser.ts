@@ -41,7 +41,7 @@ const useRandomUser = () => {
     try {
       //   throw new Error("try error");
       const response = await axios.get("https://randomuser.me/api/");
-      console.log(response.data);
+      // console.log(response.data);
       setUser(response.data.results[0]);
     } catch (err) {
       setError("Failed to get user");
