@@ -12,19 +12,19 @@ My approach for the structure is to first create a component with a custom hook 
 
 My approach for the UI will be mobile-first. After I have successfully retrieved my data, I will start styling the UI for mobile first. Then I will move on to bigger screens. For this test, I will be using regular CSS and the UI library called Ant Design.
 
-I will use Ant Design in the UI for clean styling.
+I will use Ant Design in the UI for clean styling. And for error handelning and loading handeling.
 
 ## Challanges
 
 1. Working with TS interface.
-   @useRandomUser.ts line 15.
-   As I mentioned, I have not worked a lot with TS. For this part, I had to look at some code I've worked with earlier.
+   -@useRandomUser.ts line 15.
+   -As I mentioned, I have not worked a lot with TS. For this part, I had to look at some code I've worked with earlier.
 
 2. Async functions.
-   @useRandomUser.ts line 35.
-   I was stuck on the fetch hook. I simply forgot that needs to be an async function since it preforms an asynchronous operation.
+   -@useRandomUser.ts line 35.
+   -I was stuck on the fetch hook. I simply forgot that needs to be an async function since it preforms an asynchronous operation.
 
 3. Rendering the data for the UI.
-   @useRandomUser.ts line 41
-   I encountered an error in the UI: "Cannot read properties of undefined (reading 'first')" when trying to render the first name of a user. I was too quick when looking at the JSON object and simply forgot to add the `.results` attribute from the API response.
+   -@useRandomUser.ts line 41.
+   -I encountered an error in the UI: "Cannot read properties of undefined (reading 'first')" when trying to render the first name of a user. I was too quick when looking at the JSON object and simply forgot to add the `.results` attribute from the API response.
    Also i did not refer to the first object in the array that the API returns. Adding `[0]` got me pass the error.
