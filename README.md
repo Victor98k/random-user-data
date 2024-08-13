@@ -3,7 +3,13 @@
 # Start time 10:00 
 # Done with test 14:30 
 
-## cd random-user-data/ cd src / npm start
+## Setup 
+
+1. cd random-user-data/ cd src / npm install
+2. npm install axios
+3. npm install npm i antd
+4. npm i @ant-design/icons
+5. npm start
 
 ## Approach
 
